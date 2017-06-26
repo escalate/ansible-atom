@@ -1,0 +1,16 @@
+galaxy_info:
+  author: Felix Boerner
+  description: Manage Atom editor and additional packages installation
+  company: Felix Boerner
+  license: MIT
+  min_ansible_version: 2.3
+  github_branch: master
+  platforms:
+   - name: Ubuntu
+     versions:
+       - xenial
+  galaxy_tags:
+    - atom
+    - atom-packages
+    - editor
+dependencies: []
