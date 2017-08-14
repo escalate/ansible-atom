@@ -20,11 +20,9 @@
     - atom
 
 - name: Install additional Atom packages per user
-  command: "apm install {{item.1}}"
+  command: "apm install {{item}}"
   become: yes
-  become_user: "{{item.0.user}}"
-  with_subelements:
-    - "{{atom_packages_per_user}}"
-    - packages
+  become_user: "{{atom_user}}"
+  with_items: "{{atom_packages}}"
   tags:
     - atom
